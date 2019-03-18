@@ -4,7 +4,6 @@
 <head>
     <title>Face tracker</title>
     <meta charset="utf-8">
-    <link href="./styles/bootstrap.min.css" rel="stylesheet" type="text/css">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
@@ -91,14 +90,13 @@
         })();
     </script>
     <script src="./vendors/jquery.min.js" charset="utf-8"></script>
-    <script src="./scripts/infoScript.js"></script>
 </head>
 
 <body>
     <script src="./scripts/utils.js"></script>
     <script src="./scripts/clmtrackr.js"></script>
     <script src="./scripts/stats.js"></script>
-    <script src="./scripts/mainScript.js"></script>
+    <script src="./scripts/infoScript.js"></script>
     
     <div id="content">
         <h2>Facetracking example</h2>
@@ -110,8 +108,10 @@
         <br />
         <input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()"
             id="startbutton"></input>
+        <input class="btn" type="button" value="click for frames" id="frameButton"> </input>
     </div>
     </div>
+    <script src="./scripts/mainScript.js"></script>
 </body>
 
 </html>
