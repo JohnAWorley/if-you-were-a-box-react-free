@@ -92,6 +92,8 @@ function drawLoop() {
         ctrack.draw(overlay);
     }
 }
+
+
 /*********** Code for stats **********/
 stats = new Stats();
 stats.domElement.style.position = 'absolute';
