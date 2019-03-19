@@ -20,7 +20,8 @@ function positionLoop() {
         positionsToFace(positions); 
     }
     else{
-        POSITIONS= null;
+        alert('face not being properly tracked');
+        
     }
 }
 
@@ -43,22 +44,19 @@ function positionsToFace(positions) {
     face.lowerLip = positions.slice(50, 58);
 
     // the eye has the upper, the lower and the middle portions
-    // Q: can each part can correspond to an instrument piece?
     face.eyeLeft = [];
     face.eyeRight = [];
 
     face.positions = positions;
-    console.log(face);
+    hexString = (Math.round(face.eyebrowLeft[0][0])).toString(16)
+    console.log(hexString);
+    console.log(face.eyebrowLeft);
+    
     return face;
 }
 
 
-// function positionLoop() {
-//     console.log('in poistion loop');
-//     var frames = requestAnimationFrame(positionLoop);
-//     var positions = ctrack.getCurrentPosition();
-
-//     console.log(positions);
 
 
-// }
+
+

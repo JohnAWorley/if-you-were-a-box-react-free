@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <style>
         @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+        
 
         body {
             font-family: 'Lato';
@@ -70,6 +71,11 @@
         .nohide {
             display: block;
         }
+
+        canvas {
+            width: 50%;
+            height: 50%
+        }
     </style>
     <script>
         // getUserMedia only works over https in Chrome 47+, so we redirect to https. Also notify user if running from file.
@@ -90,6 +96,7 @@
         })();
     </script>
     <script src="./vendors/jquery.min.js" charset="utf-8"></script>
+    <script src="./vendors/three.min.js"></script>
 </head>
 
 <body>
@@ -97,7 +104,8 @@
     <script src="./scripts/clmtrackr.js"></script>
     <script src="./scripts/stats.js"></script>
     <script src="./scripts/infoScript.js"></script>
-    
+
+
     <div id="content">
         <h2>Facetracking example</h2>
         <div id="container">
@@ -112,6 +120,7 @@
     </div>
     </div>
     <script src="./scripts/mainScript.js"></script>
+    <script src="./scripts/animationScript.js"></script>
 </body>
 
 </html>

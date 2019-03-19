@@ -10,7 +10,8 @@
     "clmtrackr": "^1.1.2",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
-    "pg": "^7.6.1"
+    "pg": "^7.6.1",
+    "three": "^0.102.1"
   },
   "devDependencies": {},
   "scripts": {
