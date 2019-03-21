@@ -18,6 +18,7 @@ function positionLoop() {
         var positions = ctrack.getCurrentPosition();
         console.log(positions);
         positionsToFace(positions); 
+       
     }
     else{
         alert('face not being properly tracked');
@@ -25,8 +26,11 @@ function positionLoop() {
     }
 }
 
+var face = {};
+
 function positionsToFace(positions) {
-    var face = {};
+    
+    face = {};
 
     face.upperMouth = positions.slice(59, 62) // slice is not inclusive
     face.lowerMouth = positions.slice(56, 59) // slice is not inclusive
@@ -50,8 +54,7 @@ function positionsToFace(positions) {
     face.positions = positions;
     hexString = (Math.round(face.eyebrowLeft[0][0])).toString(16)
     console.log(hexString);
-    console.log(face.eyebrowLeft);
-    
+    console.log('infoScript', face);
     return face;
 }
 
